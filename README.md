@@ -12,7 +12,6 @@ This is a web application that allows users to explore characters and houses fro
 * 🔍 Search characters by name
 * 🏰 Filter by houses
 * 🔃 Sort characters (name, culture)
-* 📄 View detailed information
 
  🌐 API Used
 * https://anapioficeandfire.com/
