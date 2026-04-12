@@ -23,7 +23,6 @@ This is a web application that allows users to explore characters and houses fro
 
 📷 Future Improvements
 
-* Add images for characters
 * Better UI design
 * Pagination
 
