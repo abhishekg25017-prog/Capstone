@@ -7,16 +7,51 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Seven Kingdoms Directory</p>
+      <h1>Game of Thrones Explorer</h1>
+      <p class="hero-copy">Search, filter, sort, and browse iconic characters from Westeros with a cleaner and more usable explorer.</p>
+    </header>
 
-  <header>
-    <h1>🏰 Game of Thrones Explorer</h1>
-    <p>Explore characters from the world of Westeros</p>
-  </header>
+    <section class="toolbar">
+      <div class="controls">
+        <input type="text" id="search" placeholder="Search character..." />
 
+        <select id="filter">
+          <option value="">Filter by House</option>
+        </select>
 
-  <div id="loader" class="loader"></div>
+        <select id="sort">
+          <option value="">Sort</option>
+          <option value="name-az">Name A-Z</option>
+          <option value="name-za">Name Z-A</option>
+          <option value="culture-az">Culture A-Z</option>
+          <option value="culture-za">Culture Z-A</option>
+        </select>
 
-  <div id="container"></div>
+        <button id="darkToggle">Toggle Theme</button>
+      </div>
+
+      <div class="results-bar">
+        <p id="resultsInfo">Loading characters...</p>
+      </div>
+    </section>
+
+    <div id="loader" class="loader"></div>
+
+    <main id="container"></main>
+
+    <nav class="pagination" aria-label="Pagination">
+      <button id="prevPage">Previous</button>
+      <span id="pageInfo">Page 1 of 1</span>
+      <button id="nextPage">Next</button>
+    </nav>
+
+    <footer>
+      <p>Project Submission</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
